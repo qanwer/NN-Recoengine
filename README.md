@@ -20,8 +20,8 @@ The first-level models vary in their inputs, architectures, and objectives, resu
 
 ### Second-level models
 The second-level models use the internal representations from the first-level models as features.
-  - **GBM** ([code](models/blend/gbm_blend.py)): a lightgbm model.
-  - **Feedforward NN** ([code](models/blend/nn_blend.py)): a feedforward neural network.
+  - **GBM** ([https://github.com/qanwer/NN-Recoengine/blob/master/gbm_blend.py](models/blend/gbm_blend.py)): a lightgbm model.
+  - **Feedforward NN** ([https://github.com/qanwer/NN-Recoengine/blob/master/nn_blend.py](models/blend/nn_blend.py)): a feedforward neural network.
 
 The final reorder probabilities are a weighted average of the outputs from the second-level models.  The final basket is chosen by using these probabilities and choosing the product subset with maximum expected F1-score.
 
